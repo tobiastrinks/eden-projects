@@ -1,0 +1,136 @@
+<div id="nav">
+		<ul>
+			<li id="nav_home" data-page="home">
+				<div class="nav_cols" id="nav_cols_name"><p>HOME</p></div>
+				<div class="nav_cols" id="nav_cols_list">
+					<img class="nav_closed" src="<?=$temp_basic_dir;?>nav_closed.png" />
+					<img class="nav_open" src="<?=$temp_basic_dir;?>nav_open.png" />
+				</div>
+				<div class="clear"></div>
+			</li>
+			<li id="nav_ueber_mich" data-page="ueber_mich">
+				<div class="nav_cols" id="nav_cols_name"><p>ÜBER MICH</p></div>
+				<div class="nav_cols" id="nav_cols_list">
+					<img class="nav_closed" src="<?=$temp_basic_dir;?>nav_closed.png" />
+					<img class="nav_open" src="<?=$temp_basic_dir;?>nav_open.png" />
+				</div>
+				<div class="clear"></div>
+			</li>
+			<li id="nav_gallerie" data-page="gallerie">
+				<div class="nav_cols" id="nav_cols_name"><p>GALLERIE</p></div>
+				<div class="nav_cols" id="nav_cols_list">
+					<img class="nav_closed" src="<?=$temp_basic_dir;?>nav_closed.png" />
+					<img class="nav_open" src="<?=$temp_basic_dir;?>nav_open.png" />
+				</div>
+				<div class="clear"></div>
+			</li>
+		</ul>
+</div>
+
+<div id="content">
+
+	<div class="pages" id="page_home">
+		<img class="nav_bg" src="<?=$temp_basic_dir;?>nav_background.png" />
+
+
+		<div id="page_home_bottom">
+			<div id="page_home_bottom_logo" data-cmspos="home_logo" data-cmstype="img"><?php cms_load_img($home_logo, 500, 500, ""); ?></div>
+			<div id="page_home_bottom_text"><div class="pages_headlines" data-cmspos="home_slogan" data-cmstype="text_long"><?=$home_slogan;?></div></div>
+			<div class="angle_button" id="page_home_scroll"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+		</div>
+		<img id="page_home_bottom_img" src="<?=$temp_basic_dir;?>home_bottom.png" />
+
+
+		<div class="page_bg" data-cmspos="home_bg" data-cmstype="img"><?php cms_load_img($home_bg, 0, 0, "");?></div>
+	</div>
+
+	<div class="pages" id="page_ueber_mich">
+
+		<img class="nav_bg" src="<?=$temp_basic_dir;?>nav_background.png" />
+		<img id="page_ueber_mich_bg_transparent" src="<?=$temp_basic_dir;?>ueber_mich_bg_transparent.png" />
+		<div class="page_bg" data-cmspos="ueber_mich_bg" data-cmstype="img"><?php cms_load_img($ueber_mich_bg, 0, 0, "");?></div>
+
+		<div id="page_ueber_mich_text" class="page_ueber_mich_content">
+			<div class="page_ueber_mich_text_rows">
+				<div class="page_ueber_mich_text_headline pages_headlines" data-cmspos="ueber_mich_headline" data-cmstype="text_long"><?=$ueber_mich_headline;?></div>
+				<div class="page_ueber_mich_text_content" data-cmspos="ueber_mich_content" data-cmstype="text_long"><?=$ueber_mich_content;?></div>
+			</div>
+
+			<div class="page_ueber_mich_text_rows" id="page_ueber_mich_kontakt">
+				<div class="page_ueber_mich_text_headline pages_headlines" data-cmspos="ueber_mich_headline_kontakt" data-cmstype="text_long"><?=$ueber_mich_headline_kontakt;?></div>
+				<div id="page_ueber_mich_kontaktdaten" data-cmspos="ueber_mich_kontaktdaten" data-cmstype="text_long"><?=$ueber_mich_kontaktdaten;?></div>
+				<div id="page_ueber_mich_kontakt_form">
+					<form action="javascript:void(0);">
+						<div id="page_ueber_mich_kontakt_form_input">
+							<input type="text" name="name" placeholder="Name" required /><br />
+							<input type="email" name="email" placeholder="E-Mail" required /><br />
+							<input type="tel" name="telefon" placeholder="Telefon" /><br />
+							<textarea type="text" name="nachricht" placeholder="Ihre Nachricht" required></textarea>
+							<br />
+						</div>
+						<button type="submit" id="page_ueber_mich_kontakt_form_submit" class="page_ueber_mich_kontakt_form_buttons">Senden</button>
+						<button id="page_ueber_mich_kontakt_form_submit_sending" class="page_ueber_mich_kontakt_form_buttons">wird gesendet</button>
+						<button id="page_ueber_mich_kontakt_form_submit_success" class="page_ueber_mich_kontakt_form_buttons">Vielen Dank für Ihre Nachricht</button>
+					</form>
+				</div>
+			</div>
+			<div class="clear"></div>
+
+		</div>
+
+	</div>
+
+	<div class="pages" id="page_gallerie">
+
+		<div class="page_bg" data-cmspos="gallerie_bg" data-cmstype="img"><?php cms_load_img($gallerie_bg, 0, 0, "");?></div>
+		<img class="nav_bg" src="<?=$temp_basic_dir;?>nav_background.png" />
+		<img id="page_gallerie_slideshow_bg" src="<?=$temp_basic_dir;?>gallerie_slideshow_bg.png" />
+
+		<div id="page_gallerie_slideshow_wrapper">
+
+			<div id="page_gallerie_slideshow" data-cmspos="gallerie_slideshow" data-cmstype="img_dia"><?php cms_load_dia("gallerie_slideshow", 0, 0); ?></div>
+
+			<div id="page_gallerie_text">
+				<div id="page_gallerie_headline" class="pages_headlines" data-cmspos="gallerie_headline" data-cmstype="text_long"><?=$gallerie_headline;?></div>
+				<div id="page_gallerie_subtext" data-cmspos="gallerie_subtext" data-cmstype="text_long"><?=$gallerie_subtext;?></div>
+			</div>
+
+			<div class="page_gallerie_slideshow_elements_details">
+				<p class="page_gallerie_slideshow_elements_details_title">Lorem ipsum</p>
+				<p class="page_gallerie_slideshow_elements_details_descr">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+				<p class="page_gallerie_slideshow_elements_details_openimg">Zum Bild</p>
+			</div>
+		</div>
+		<div id="page_gallerie_preview">
+			<div id="page_gallerie_preview_img">
+				<img src="" alt="" />
+			</div>
+			<div id="page_gallerie_preview_descr">
+				<table>
+					<tr>
+						<td>TITEL</td>
+						<td>Wald</td>
+					</tr>
+					<tr>
+						<td>BESCHREIBUNG</td>
+						<td>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</td>
+					</tr>
+					<tr>
+						<td>DATUM</td>
+						<td>05.12.2016</td>
+					</tr>
+					<tr>
+						<td>FOTOGRAF</td>
+						<td>Florian Schulz</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<img id="footer_bg" src="<?=$temp_basic_dir;?>footer_bg.png" />
+		<div id="footer_content" data-cmspos="footer" data-cmstype="text_long"><?=$footer;?></div>
+	</div>
+</div>
