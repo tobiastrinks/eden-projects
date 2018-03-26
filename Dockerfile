@@ -1,6 +1,6 @@
 FROM php:5.6.33-apache
-COPY ./docker/apache2.conf /etc/apache2/apache2.conf
-COPY ./docker/php-timezone.ini /usr/local/etc/php/conf.d/timezone.ini
+COPY ./apache2.conf /etc/apache2/apache2.conf
+COPY ./php-timezone.ini /usr/local/etc/php/conf.d/timezone.ini
 COPY . /var/www/html
 
 RUN docker-php-ext-install mysqli
